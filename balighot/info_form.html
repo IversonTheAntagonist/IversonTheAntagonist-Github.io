@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chrome Hearts Info Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0c0c0c;
+      font-family: 'UnifrakturCook', cursive;
+      color: #ccc;
+      padding: 30px;
+      background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #111;
+      padding: 30px;
+      border: 3px solid silver;
+      border-radius: 15px;
+      box-shadow: 0 0 20px silver;
+    }
+    h1 {
+      text-align: center;
+      color: silver;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid silver;
+      background-color: #222;
+      color: #eee;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+      background-color: silver;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✠ Chrome Hearts Info ✠</h1>
+    <form action="process_info.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label for="birthyear">Birth Year:</label>
+      <input type="number" name="birthyear" required>
+
+      <label for="sleephours">Sleeping Hours per Day:</label>
+      <input type="number" step="0.1" name="sleephours" required>
+
+      <label for="city">City:</label>
+      <select name="city" required>
+        <option value="Manila">Manila</option>
+        <option value="Cebu">Cebu</option>
+        <option value="Davao">Davao</option>
+        <option value="Quezon City">Quezon City</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
