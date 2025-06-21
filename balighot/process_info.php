@@ -80,13 +80,16 @@ $totalSleepYears = ($sleephours * 365 * $age) / 24;
 
     <div class="message">
       <?php
-      if ($age > 50) echo "<p>🕯 You might want to start planning for retirement.</p>";
-      if ($totalSleepYears > 15) echo "<p>💤 You’ve spent a huge part of your life sleeping!</p>";
-      echo ($city !== \"Quezon City\") ? \"<p>🏙 You don’t live in the best city.</p>\" : \"<p>🎉 Quezon City rocks!</p>\";
-      if ($age <= 25) echo \"<p>📚 You're still young, enjoy learning!</p>\";
+        if ($age > 50) echo "<p>🕯 You might want to start planning for retirement.</p>";
+        if ($totalSleepYears > 15) echo "<p>💤 You’ve spent a huge part of your life sleeping!</p>";
+        echo ($city !== "Quezon City") 
+          ? "<p>🏙 You don’t live in the best city.</p>" 
+          : "<p>🎉 Quezon City rocks!</p>";
+        if ($age <= 25) echo "<p>📚 You're still young, enjoy learning!</p>";
       ?>
     </div>
   <?php endif; ?>
 </div>
 </body>
 </html>
+
